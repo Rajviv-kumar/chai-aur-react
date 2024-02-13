@@ -13,7 +13,18 @@ function App() {
 
   if(counter < 20){
     
-    setCounter(counter + 1);
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+
+    setCounter((prevCounter)=>{
+      return prevCounter +1
+    }) //Call Back functions
+
+    setCounter(prevCounter => prevCounter +1)
+    setCounter(prevCounter => prevCounter +1)
+    setCounter(prevCounter => prevCounter +1)
   }
  
   console.log("Counter",counter);
